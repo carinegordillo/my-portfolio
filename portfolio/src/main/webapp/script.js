@@ -17,7 +17,8 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['"unless someone like you cares a whole awful lot, nothing is going to get better, its not"',
+       'El que no lucha por lo que quiere, no merece lo que desea.'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
