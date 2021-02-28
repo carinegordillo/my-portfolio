@@ -1,24 +1,110 @@
 <!DOCTYPE html>
 <html>
+  <body style="background-color:#ccebc3;"></body>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
+
   <body>
+    
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>Carine Gordillo</p>
-      <p> Hello! I'm Carine  and I live in Downey, California but parents are originally from<br/> Zapopan, Jalisco. Some of my favorite hobbies are hiking, being with my family and
-      <br/> taking on new projects. I am 19 years old and attend Cal State Long Beach. Currently, I am <br/> participating in a progam by Google called SPS and I am on team 41! </p>
-      <img src="/images/cat.jpg" width="400"/>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random quote:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-      <p>Projects:<br/>Simple Login System, Dice Game, Alien Invaders</p>
-      <p>LinkedIn: GitHub:</p>
+     <p class="me">
+         <h1 style="color:#5e7059;font-family:optima;font-size:300%;">Carine Gordillo
+            <img src="/images/plant.png" width="250" height="300" style="float:right"></h1>
+
+         <div id="header">
+             <style>
+             img{border-radius: 30%;}
+             </style>
+             <p id="me"><img src="/images/Mainme.jpg" alt="Avatar" style="vertical-align:middle;margin:0px 50px;width:200px"></p>
+         </div>
+         <h3 style="color:#5e7059;font-size:130%;"></h3style>About Me!</h3>
+         <p style="color:#000000;">Hello! I'm Carine (KAh-dín)  and I live in Downey, California <br>but parents are originally from Zapopan, Jalisco. I am 19 <br>years old and attend 
+            Cal State Long Beach. Currently, I am <br> participating in a progam by Google called SPS and I am on team 41! </p>
+
+      <hr>
+      <h3 style="color:#5e7059;font-size:130%;">Hobbies!</h3>
+      <p class="hobbies">
+          <b style="color:#5e7059;line-height:30px;">Sports</b>
+          <br style="color:#5e7059;line-height:60px;"> I really enjoy playing any sport because of how competative I am. I did <br> play Soccer for 9 
+          years and Volleyball for my highschool senior season.</br>
+         <b style="color:#5e7059;line-height:30px">Baking<img src="/decor/bluebutterflies.png" width="100" height="125" style="float:right"></b>
+         <br style="color:#5e7059;line-height:60px;">For sure something I am trying to get better at but I love being able to bake <br>and I really want to start getting into making food in general:)</br>
+         <b style="color:#5e7059;line-height:30px">DIY</b>
+         <br style="color:#5e7059;">I love doing projects whether its something I need or something jsut for<br> fun, I find it really enjoyable</br>
+      <hr>
+      <h3 style="color:#5e7059;font-size:130%;">Music!</h3>
+      <p class= "music">
+        
+          <b style="color:#5e7059;line-height:30px">Lauryn Hill&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N.W.A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kid Cudi
+          <br style="color:#5e7059;line-height:30px;">J.Cole&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;Camila 
+          <br style="color:#5e7059;line-height:30px;">Julieta Venegas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kendick Lamar
+          </b></br>
+        
+      <hr>
+      <h3 style="color:#5e7059;font-size:130%;">Contact Me !</h3>
+      <p class="contact">
+          <b style="color:#5e7059;">LinkedIn:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github:
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram:</b>
+          <br><a href="https://www.linkedin.com/in/carine-gordillo-b465361b8/"> Carine Gordillo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3><a href="https://github.com/carinegordillo"> carinegordillo</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/carinegordillo"/> @carinegordillo</a></br>
+
+      <hr>
+      <h3 style="color:#5e7059;font-size:130%;">Projects!</h3>
+      <b style="color:#5e7059;line-height:30px">Simple Login System</b>
+      <br>- simple code that prompts user for their username and password or to <br>create a new account<br>
+      -uses separate text files to store data of users</br>
+      <b style="color:#5e7059;line-height:30px">Alien Invaders</b>
+      <br>-Game based off of the classic Space Invaders made by using the <br>interpreter Pygame</br>
+      <b style="color:#5e7059;line-height:30px">Dice Game</b>
+      <br>-A gambling dice game by using the random function, allows<br> user to bet against a computer and only allows bets<br>that both players can afford</br>
+      <hr>
+      <h3 style="color:#5e7059;font-size:130%;">Gallery!</h3>
+    
+    <style>
+             img{border-radius: 0%;}
+             </style>
+    <div class="row"> 
+         <div class="column">
+             <img src="/images/cat.jpg" style="width:30%">
+             <img src="/images/Mamba.JPG" style="width:25%">
+             <img src="/images/Virgencita2.png" style="width:30%">
+             <img src="/images/one.JPG" style="width:30%">
+             <img src="/images/kitten.png" style="width:30%">
+             <img src="/images/ss2.png" style="width:30%">
+             <img src="/images2/c.JPG" style="width:30%">
+             <img src="/images2/f.JPG" style="width:30%">
+              <img src="/images2/g.JPG" style="width:30%">
+         </div>  
+          <div class="column">
+              <img src="/images/ss1.png" style="width:30%">
+              <img src="/images/two.JPG" style="width:30%">
+              <img src="/images/three.JPG" style="width:30%">
+              <img src="/images/four.JPG" style="width:30%">
+              <img src="/images/fam.JPG" style="width:30%">
+              <img src="/images/emilia.JPG" style="width:30%">
+              <img src="/images/ninfaball.png" style="width:30%">
+
+              <img src="/images2/e.JPG" style="width:30%">
+
+           </div>
+     </div>
+      
+      <h3 style="color:#5e7059;font-size:130%;">Click here to see a random fact about me!:</h3>
+      <button onclick="addRandomFact()">click me!</button>
+      <div id="fact-container"></div>
+      <p style="color:#5e7059;">Click <a href="/hello">here</a> to see content created by server code.</p>
+
+
+            
       
     </div>
   </body>

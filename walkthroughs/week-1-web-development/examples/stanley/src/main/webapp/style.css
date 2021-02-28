@@ -4,6 +4,14 @@
   width: 650px;
 }
 
+#header{
+    position: relative;
+
+}
+p#me img {
+background-position-x: 50px; /*move it to the left*/
+}
+
 .image-thumbnails {
   display: flex;
   flex-wrap: wrap;
