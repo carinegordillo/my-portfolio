@@ -7,3 +7,63 @@
 #fact-container {
   margin-top: 20px;
 }
+
+p.artist{
+    color:#5e7059;
+    line-height:30px;
+}
+.container{
+    display:flex;
+    height:125px;
+    width:300;
+    flex-wrap:wrap;
+
+    
+    
+}
+.artist{
+    margin:20px;
+    height:20px;
+    width: 120px;
+    font-weight:bold;
+    color:#000000;
+
+}
+.titles{
+    color:#5e7059;
+    font-size:130%;
+}
+.subtitles{
+    color:#5e7059;
+    line-height:30px;
+}
+.name{
+    color:#5e7059;
+    font-family:optima;
+    font-size:300%;
+
+}
+.contactname{
+    display:flex;
+    height:25px;
+    width:120;
+    flex-wrap:wrap;
+}
+.social{
+    height:25px;
+    width: 120px;
+    font-weight:bold;
+    left:-5px;
+    color:#000000;
+}
+.link{
+    margin:10px;
+    height:0px;
+    width: 120px;
+}
+.links{
+    display:flex;
+    height:30px;
+    width:120;
+    flex-wrap:wrap;
+}
