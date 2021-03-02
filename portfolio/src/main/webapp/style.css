@@ -7,10 +7,10 @@
   margin-top: 20px;
 }
 body {
-  background-color:#ccebc3;
+  background-color: #ccebc3;
 }
 p.artist{
-    color:#5e7059;
+    color: #5e7059;
     line-height:30px;
 }
 
@@ -22,7 +22,7 @@ p.artist{
 }
 
 .artist{
-    color:#000000;
+    color: #000000;
     font-weight:bold;
     height:20px;
     margin:20px;
@@ -30,7 +30,7 @@ p.artist{
 }
 
 .titles{
-    color:#5e7059;
+    color: #5e7059;
     font-size:130%;
 }
 
@@ -63,12 +63,12 @@ p.artist{
 }
 
 .subtitles{
-    color:#5e7059;
+    color: #5e7059;
     line-height:30px;
 }
 
 .name{
-    color:#5e7059;
+    color: #5e7059;
     font-family:optima;
     font-size:300%;
 }
@@ -87,7 +87,7 @@ p.artist{
 }
 
 .social{
-    color:#000000;
+    color: #000000;
     font-weight:bold;
     height:25px;
     left:-5px;
