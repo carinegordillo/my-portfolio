@@ -35,17 +35,18 @@ p.artist{
 }
 
 #images-wrapper {    
-   line-height: 0;       
-    -webkit-column-count: 5;    
-    -webkit-column-gap: 0px;    
-    -moz-column-count: 5;
+   line-height: 0;      
+   -moz-column-count: 5; 
     -moz-column-gap: 0px;
      column-count: 5;    
-     column-gap: 0px;    
+     column-gap: 0px;  
+    -webkit-column-count: 5;    
+    -webkit-column-gap: 0px;      
 }  
 #images-wrapper img {    
+   height: auto !important; 
    width: 100% !important;    
-   height: auto !important;  
+ 
 }  
 #images-wrapper{    
    display:inline-block;    
