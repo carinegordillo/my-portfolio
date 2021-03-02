@@ -16,10 +16,13 @@
  * Adds a random fact to the page.
  */
 function addRandomFact() {
-  const facts =
-      ['I measure about 5 feet 10 inches!','I am really good at MarioKart and Just Dance!',
-    'Some of my favorite movies are Now You See Me and Ratatouille!','I have a 6 month Cane Corso named Mamba!',
-    'I am allergic to cats:(!','One of my favorite shows is Hells Kitchen!'];
+  const facts =[
+    'I measure about 5 feet 10 inches!',
+    'I am really good at MarioKart and Just Dance!',
+    'Some of my favorite movies are Now You See Me and Ratatouille!',
+    'I have a 6 month Cane Corso named Mamba!',
+    'I am allergic to cats:(!',
+    'One of my favorite shows is Hells Kitchen!'];
 
   // Pick a random fact.
   const fact = facts[Math.floor(Math.random() * facts.length)];
