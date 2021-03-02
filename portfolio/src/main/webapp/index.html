@@ -1,19 +1,97 @@
 <!DOCTYPE html>
 <html>
+  <body >
+  </body>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
+
   <body>
+    
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+         <div class="plant">
+             <img src="/images/plant.png" > 
+         </div>
+         <h1 class="name">Carine Gordillo</h1> 
+         <div class="me">
+             <img src="/images/Mainme.jpg" alt="Avatar" >
+         </div>
+         <h3 class="titles">About Me!</h3>
+         <p>Hello! I'm Carine (KAh-dín)  and I live in Downey, California <br>but parents are originally from Zapopan, Jalisco. I am 19 <br>years old and attend 
+            Cal State Long Beach. Currently, I am <br> participating in a progam by Google called SPS and I am on team 41! </p>
+      <hr>
+      <h3 class="titles">Hobbies!</h3>
+      <p class="hobbies">
+          <b class="subtitles">Sports</b>
+          <br > I really enjoy playing any sport because of how competative I am. I did <br> play Soccer for 9 
+          years and Volleyball for my highschool senior season.</br>
+         <b class="subtitles">Baking<img src="/decor/bluebutterflies.png" width="100" height="125" style="float:right"></b>
+         <br>For sure something I am trying to get better at but I love being able to bake <br>and I really want to start getting into making food in general:)</br>
+         <b class="subtitles">DIY</b>
+         <br>I love doing projects whether its something I need or something just for<br> fun, I find it really enjoyable</br></p>
+      <hr>
+      <h3 class="titles">Music!</h3>    
+        <div class="container">
+            <div class="artist">Lauryn Hill</div>
+            <div class="artist">Kendrick Lamar</div>
+            <div class="artist">Kid Cudi</div>
+            <div class="artist">J.cole</div>
+            <div class="artist">Camila</div>
+            <div class="artist">Julieta Venegas</div>
+            <div class="artist">N.W.A</div>
+        </div>    
+      <hr>
+      <h3 class="titles">Contact Me !</h3>
+        <div class="contactname">
+          <div class="social"> LinkedIn:</div>
+          <div class="social"> GitHub:</div>
+          <div class="social"> Instagram:</div>
+         </div>
+         <div class="links">
+          <div class="link"><a href="https://www.linkedin.com/in/carine-gordillo-b465361b8/"> Carine Gordillo</a></div>
+          <div class="link"><a href="https://github.com/carinegordillo"> carinegordillo</a></div>
+          <div class="link"><a href="https://www.instagram.com/carinegordillo"/> @carinegordillo</a></div>
+        </div>         
+      <hr>
+      <h3 class="titles">Projects!</h3>
+      <b class="subtitles">Simple Login System</b>
+      <br>- simple code that prompts user for their username and password or to <br>create a new account<br>
+      -uses separate text files to store data of users</br>
+      <b class="subtitles">Alien Invaders</b>
+      <br>-Game based off of the classic Space Invaders made by using the <br>interpreter Pygame</br>
+      <b class="subtitles">Dice Game</b>
+      <br>-A gambling dice game by using the random function, allows<br> user to bet against a computer and only allows bets<br>that both players can afford</br>
+      <hr>
+      <h3 class="titles">Gallery!</h3>
+
+    <div id="images-wrapper"> 
+ 
+             <img src="/images/cat.jpg" >
+             <img src="/images/Mamba.JPG" >
+             <img src="/images/Virgencita2.png" >
+             <img src="/images/one.JPG" >
+             <img src="/images/kitten.png" >
+             <img src="/images/ss2.png" >
+             <img src="/images2/c.JPG" >
+             <img src="/images2/f.JPG" >
+              <img src="/images2/g.JPG" >
+              <img src="/images2/hike.png" >
+              <img src="/images/ss1.png" >
+              <img src="/images/two.JPG" >
+              <img src="/images/three.JPG" >
+              <img src="/images/four.JPG" >
+              <img src="/images/fam.JPG" >
+              <img src="/images/emilia.JPG" >
+              <img src="/images/ninfaball.png" >
+              <img src="/images2/e.JPG" >
+     </div>
+      <h3 class="titles">Click here to see a random fact about me!:</h3>
+      <button onclick="addRandomFact()">click me!</button>
+      <div id="fact-container"></div>
+      <p class="subtitles">Click <a href="/hello">here</a> to see content created by server code.</p>
     </div>
   </body>
 </html>
