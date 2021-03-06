@@ -3,6 +3,6 @@ async function showJokeAnswer() {
   const responseFromServer = await fetch('/Golf-Joke');
   const textFromResponse = await responseFromServer.text();
 
-  const dateContainer = document.getElementById('golf-joke');
-  dateContainer.innerText = textFromResponse;
+  const golfJokeContainer = document.getElementById('golf-joke');
+  golfJokeContainer.innerText = textFromResponse;
 }
