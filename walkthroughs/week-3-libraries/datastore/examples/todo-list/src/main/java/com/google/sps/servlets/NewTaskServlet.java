@@ -44,6 +44,7 @@ public class NewTaskServlet extends HttpServlet {
             .set("title", title)
             .set("timestamp", timestamp)
             .build();
+
     datastore.put(taskEntity);
 
     response.sendRedirect("/index.html");
