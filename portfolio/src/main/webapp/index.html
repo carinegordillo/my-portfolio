@@ -63,13 +63,33 @@
       <b class="subtitles">Dice Game</b>
       <br>-A gambling dice game by using the random function, allows<br> user to bet against a computer and only allows bets<br>that both players can afford</br>
       <hr>
-      <form action="/get-insta"method="POST">
-        <h3>Want to be friends?:)</h3>
-        <p>Enter your insta @ here!</p>        
-         <textarea name="text-input">@</textarea>         
+      <body onload="loadTasks()">
+      <form action="/get-info"method="POST">
+        <h3>Contact Me!☺</h3> 
+      <div class=row>
+          <div class=column>
+        <label for="name"> Name </label>
+        <input type="text" name="name" placeholder="Your name...">
+        <label for="email"> Email </label>
+        <input type="text" name="email" placeholder="Please enter valid email"> 
+        <label for="reason"> Reason </label>
+         <select id="reason" name="reason">
+             <option value = "feedback">Feedback</option>
+             <option value = "comment">Comment</option>
+             <option value = "career inquiry">Career inquiry </option>
+             <option value = "friend inquiry">Friend inquiry</option>
+        </select>
+        <label for="message"> Message </label>
+
+         <textarea type="text" class="bigmessage"id="message" name="message" placeholder="Please enter message"></textarea>  
          <br/>
          <input type="submit" />
         </form>
+        <ul id="task-info"></ul>
+        </body>
+        </div>
+    </div>
+
         <hr>
       <h3 class="titles">Gallery!</h3>
     <div id="images-wrapper"> 

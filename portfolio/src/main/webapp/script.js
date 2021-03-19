@@ -36,3 +36,33 @@ function addRandomFact() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = fact;
 }
+
+/** Fetches info from the server and adds them to the DOM. */
+function loadTasks() {
+  fetch('/list-info').then(response => response.json()).then((forms) => {
+    const formListElement = document.getElementById('form-list');
+    tasks.forEach((form) => {
+      formListElement.appendChild(createFormElement(form));
+    })
+  });
+}
+
+/** Creates an element that represents a task, including its delete button. */
+function createFormElement(form) {
+  const formElement = document.createElement('li');
+  formElement.className = 'Form';
+
+  const titleElement = document.createElement('span');
+  emailElement.innerText = form.email;
+
+  formElement.appendChild(emailElement);
+  return formElement;
+
+}
+
+/** Tells the server to delete the task. */
+//function deleteTask(form) {
+//  const params = new URLSearchParams();
+ // params.append('id', task.id);
+ // fetch('/delete-task', {method: 'POST', body: params});
+//}
