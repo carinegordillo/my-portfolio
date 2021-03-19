@@ -10,22 +10,29 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 
 
-@WebServlet("/get-insta")
-public class GetInstaServlet extends HttpServlet {
+@WebServlet("/get-info")
+public class GetInfoServelet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+     // Sanitize user input to remove HTML tags and JavaScript.
+    String Name = Jsoup.clean(request.getParameter("name"), Whitelist.none());
+    String Reason = Jsoup.clean(request.getParameter("reason"), Whitelist.none());
+    String Message = Jsoup.clean(request.getParameter("message"), Whitelist.none());
+    String Email = Jsoup.clean(request.getParameter("email"), Whitelist.none());
 
-    String textValue = request.getParameter("text-input");
-    System.out.println("You submitted: " + textValue);
-    response.getWriter().println("You submitted: " + textValue + ", hope to talk to you soon!"); 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-    KeyFactory keyFactory = datastore.newKeyFactory().setKind("InstaHandle");
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Form");
     FullEntity taskEntity =
     Entity.newBuilder(keyFactory.newKey())
-        .set("text-input", textValue)
+        .set("name", Name)
+        .set("reason",Reason)
+        .set("message",Message)
+        .set("email",Email)
         .build();
     datastore.put(taskEntity);
     response.sendRedirect("/index.html");
